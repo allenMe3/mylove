@@ -1,0 +1,73 @@
+html, body {
+   padding: 0;
+   margin: 0;
+   font-family: 'Arial', sans-serif;
+/*            background-color: #FEE9E9;*/
+            text-align: center;
+        }
+    h1 {
+        font-size: 48px;
+        color: #FF69B4;
+      }
+
+        p {
+            font-size: 24px;
+            color: #FF69B4;
+        }
+canvas {
+  width: 100%;
+  height: 65%;
+}
+#tiao{
+  cursor: pointer;
+}
+        #bg{
+            width: 500px;
+            height: 120px;
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid white;
+            box-shadow: 0px 0px 100px 20px white;
+            position: absolute;
+            margin: auto;
+            left: 35%;
+            top: 30%;
+            display: none;
+            z-index: 10000;
+        }
+
+#musicplay{
+
+ background-color: #FEE9E9;
+            border: none;
+            color: white;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 12px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px; /* 圆角 */
+            transition-duration: 0.4s;
+            margin: 0 auto;
+}
+button:hover {
+  opacity: 1; /* 鼠标悬停时的不透明度 */
+}
+button:active {
+  top: 4px; /* 点击时的位置调整 */
+  box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px; /* 点击时的阴影效果 */
+}
+ .hidden {
+            display: none;
+        }
+        #starfield{
+    position:fixed;/*设置定位*/
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:-1;/*使画布基于最低层*/
+    background:#0e1729;/*画布背景色*/
+}
